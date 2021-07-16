@@ -1,0 +1,6 @@
+{
+	"appId": "io.ionic.starter",
+	"appName": "tabs",
+	"webDir": "www",
+	"bundledWebRuntime": false
+}
