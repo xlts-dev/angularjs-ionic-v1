@@ -1,6 +1,6 @@
 {
-	"appId": "io.ionic.starter",
-	"appName": "tabs",
+	"appId": "dev.xlts.ionic-v1",
+	"appName": "angularjs-ionic-v1",
 	"webDir": "www",
 	"bundledWebRuntime": false
 }
