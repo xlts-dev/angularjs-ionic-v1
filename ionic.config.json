@@ -1,6 +1,8 @@
 {
   "name": "angularjs-ionic-v1",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "ionic1",
   "watchPatterns": [
     "scss/**/*",
