@@ -1,8 +1,6 @@
 {
   "name": "angularjs-ionic-v1",
-  "integrations": {
-    "capacitor": {}
-  },
+  "integrations": {},
   "type": "ionic1",
   "watchPatterns": [
     "scss/**/*",
