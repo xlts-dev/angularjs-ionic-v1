@@ -23,7 +23,7 @@
     "native-run": "^1.4.0"
   },
   "dependencies": {
-    "angular": "1.5.11",
+    "angular": "1.8.0",
     "angular-animate": "1.5.11",
     "angular-sanitize": "1.5.11",
     "angular-ui-router": "0.2.13",
