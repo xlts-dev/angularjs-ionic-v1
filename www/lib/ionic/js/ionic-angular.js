@@ -2,7 +2,7 @@
  * Copyright 2015 Drifty Co.
  * http://drifty.com/
  *
- * Ionic, v1.3.5
+ * Ionic, v1.3.2
  * A powerful HTML5 mobile app framework.
  * http://ionicframework.com/
  *
@@ -902,7 +902,7 @@ function($rootScope, $state, $location, $window, $timeout, $ionicViewSwitcher, $
           var viewIds = Object.keys(viewHistory.views);
           viewIds.forEach(function(viewId) {
             var view = viewHistory.views[viewId];
-            if ((view.backViewId === switchToView.viewId) && (view.historyId !== switchToView.historyId)) {
+            if ( view.backViewId === switchToView.viewId ) {
               view.backViewId = null;
             }
           });
@@ -1538,7 +1538,7 @@ function($rootScope, $state, $location, $document, $ionicPlatform, $ionicHistory
  * $ionicConfigProvider.views.maxCache(10);
  * ```
  *
- * Additionally, each platform can have its own config within the `$ionicConfigProvider.platform`
+ * Additionally, each platform can have it's own config within the `$ionicConfigProvider.platform`
  * property. The config below would only apply to Android devices.
  *
  * ```js
@@ -2388,7 +2388,7 @@ function($ionicLoadingConfig, $ionicBody, $ionicTemplateLoader, $ionicBackdrop, 
   function showLoader(options) {
     options = extend({}, $ionicLoadingConfig || {}, options || {});
     // use a default delay of 100 to avoid some issues reported on github
-    // https://github.com/ionic-team/ionic/issues/3717
+    // https://github.com/driftyco/ionic/issues/3717
     var delay = options.delay || options.showDelay || 0;
 
     deregisterStateListener1();
@@ -2522,7 +2522,7 @@ function($rootScope, $ionicBody, $compile, $timeout, $ionicPlatform, $ionicTempl
      *    Default: 'slide-in-up'
      *  - `{boolean=}` `focusFirstInput` Whether to autofocus the first input of
      *    the modal when shown. Will only show the keyboard on iOS, to force the keyboard to show
-     *    on Android, please use the [Ionic keyboard plugin](https://github.com/ionic-team/ionic-plugin-keyboard#keyboardshow).
+     *    on Android, please use the [Ionic keyboard plugin](https://github.com/driftyco/ionic-plugin-keyboard#keyboardshow).
      *    Default: false.
      *  - `{boolean=}` `backdropClickToClose` Whether to close the modal on clicking the backdrop.
      *    Default: true.
@@ -5214,7 +5214,7 @@ function($timeout, $document, $q, $ionicClickBlock, $ionicConfig, $ionicNavBarDe
  * More info:
  * - https://openradar.appspot.com/22186109
  * - https://github.com/angular/angular.js/issues/12241
- * - https://github.com/ionic-team/ionic/issues/4082
+ * - https://github.com/driftyco/ionic/issues/4082
  *
  *
  * @license AngularJS
@@ -8875,7 +8875,7 @@ IonicModule
  *
  * - The iOS webview has a performance bottleneck when switching out `<img src>` attributes.
  *   To increase performance of images on iOS, cache your images in advance and,
- *   if possible, lower the number of unique images. We're working on [a solution](https://github.com/ionic-team/ionic/issues/3194).
+ *   if possible, lower the number of unique images. We're working on [a solution](https://github.com/driftyco/ionic/issues/3194).
  *
  * @usage
  * #### Basic Item List ([codepen](http://codepen.io/ionic/pen/0c2c35a34a8b18ad4d793fef0b081693))
@@ -10608,7 +10608,7 @@ function headerFooterBarDirective(isHeader) {
  * reach to trigger the on-infinite expression. Default: 1%.
  * @param {string=} spinner The {@link ionic.directive:ionSpinner} to show while loading. The SVG
  * {@link ionic.directive:ionSpinner} is now the default, replacing rotating font icons.
- * @param {string=} icon The icon to show while loading. Default: 'ion-load-d'.  This is depreciated
+ * @param {string=} icon The icon to show while loading. Default: 'ion-load-d'.  This is depreicated
  * in favor of the SVG {@link ionic.directive:ionSpinner}.
  * @param {boolean=} immediate-check Whether to check the infinite scroll bounds immediately on load.
  *
@@ -11181,7 +11181,7 @@ IonicModule
  *
  * ### Notes
  * - This directive requires the
- * [Ionic Keyboard Plugin](https://github.com/ionic-team/ionic-plugins-keyboard).
+ * [Ionic Keyboard Plugin](https://github.com/driftyco/ionic-plugins-keyboard).
  * - On Android not in fullscreen mode, i.e. you have
  *   `<preference name="Fullscreen" value="false" />` or no preference in your `config.xml` file,
  *   this directive is unnecessary since it is the default behavior.
@@ -13296,6 +13296,7 @@ function($animate, $timeout, $compile, $ionicSlideBoxDelegate, $ionicHistory, $i
  * @ngdoc directive
  * @name ionSlides
  * @module ionic
+ * @delegate ionic.service:$ionicSlideBoxDelegate
  * @restrict E
  * @description
  * The Slides component is a powerful multi-page container where each page can be swiped or dragged between.

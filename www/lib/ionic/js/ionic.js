@@ -2,7 +2,7 @@
  * Copyright 2015 Drifty Co.
  * http://drifty.com/
  *
- * Ionic, v1.3.5
+ * Ionic, v1.3.2
  * A powerful HTML5 mobile app framework.
  * http://ionicframework.com/
  *
@@ -18,7 +18,7 @@
 // build processes may have already created an ionic obj
 window.ionic = window.ionic || {};
 window.ionic.views = {};
-window.ionic.version = '1.3.5';
+window.ionic.version = '1.3.2';
 
 (function (ionic) {
 
@@ -727,7 +727,7 @@ window.ionic.version = '1.3.5';
     // whatever lookup was done to find this element failed to find it
     // so we can't listen for events on it.
     if(element === null) {
-      void 0;
+      console.error('Null element passed to gesture (element does not exist). Not listening for gesture');
       return this;
     }
 
@@ -2453,7 +2453,9 @@ window.ionic.version = '1.3.5';
   function verifyPlatformReady() {
     setTimeout(function() {
       if(!self.isReady && self.isWebView()) {
-        void 0;
+        console.warn('Possible issue: deviceready did not fire in a reasonable amount of time. ' +
+        'This can be caused by plugins in an inconsistent state. One possible solution: uninstall/remove all ' +
+        'plugins and reinstall them. Additionally, one or more plugins might be faulty or out of date.');
       }
     }, platformReadyTimer);
   }
@@ -2666,7 +2668,7 @@ window.ionic.version = '1.3.5';
  * - Works with labels surrounding inputs
  * - Does not fire off a click if the user moves the pointer too far
  * - Adds and removes an 'activated' css class
- * - Multiple [unit tests](https://github.com/ionic-team/ionic/blob/1.x/test/unit/utils/tap.unit.js) for each scenario
+ * - Multiple [unit tests](https://github.com/driftyco/ionic/blob/1.x/test/unit/utils/tap.unit.js) for each scenario
  *
  */
 /*
@@ -2977,7 +2979,7 @@ function tapMouseDown(e) {
     e.stopPropagation();
 
     if (!ionic.Platform.isEdge() && (!ionic.tap.isTextInput(e.target) || tapLastTouchTarget !== e.target) &&
-      !isSelectOrOption(e.target.tagName) && !e.target.isContentEditable && !ionic.tap.isVideo(e.target)) {
+      !isSelectOrOption(e.target.tagName) && !ionic.tap.isVideo(e.target)) {
       // If you preventDefault on a text input then you cannot move its text caret/cursor.
       // Allow through only the text input default. However, without preventDefault on an
       // input the 300ms delay can change focus on inputs after the keyboard shows up.
@@ -3571,7 +3573,7 @@ ionic.DomUtil.ready(function() {
  * which can cause layout issues such as pushing headers up and out of view.
  *
  * The keyboard fixes work best in conjunction with the
- * [Ionic Keyboard Plugin](https://github.com/ionic-team/ionic-plugins-keyboard),
+ * [Ionic Keyboard Plugin](https://github.com/driftyco/ionic-plugins-keyboard),
  * although it will perform reasonably well without.  However, if you are using
  * Cordova there is no reason not to use the plugin.
  *
@@ -3602,7 +3604,7 @@ ionic.DomUtil.ready(function() {
  *
  * ### Plugin Usage
  * Information on using the plugin can be found at
- * [https://github.com/ionic-team/ionic-plugins-keyboard](https://github.com/ionic-team/ionic-plugins-keyboard).
+ * [https://github.com/driftyco/ionic-plugins-keyboard](https://github.com/driftyco/ionic-plugins-keyboard).
  *
  * ----------
  *
@@ -6984,7 +6986,7 @@ ionic.scroll = {
 (function(ionic) {
   var NOOP = function() {};
   var deprecated = function(name) {
-    void 0;
+    console.error('Method not available in native scrolling: ' + name);
   };
   ionic.views.ScrollNative = ionic.views.View.inherit({
 

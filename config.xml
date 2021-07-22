@@ -1,8 +1,8 @@
 <?xml version='1.0' encoding='utf-8'?>
 <widget id="dev.xlts.angularjs.ionic" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
-    <name>MyApp</name>
-    <description>An awesome Ionic/Cordova app.</description>
-    <author email="hi@ionicframework.com" href="http://ionicframework.com/">Ionic Framework Team</author>
+    <name>Ionic AngularJS</name>
+    <description>An Ionic v1 app running with XLTS for AngularJS.</description>
+    <author email="support@xlts.dev" href="https://xlts.dev">XLTS.dev Team</author>
     <content src="index.html" />
     <access origin="*" />
     <allow-intent href="http://*/*" />
