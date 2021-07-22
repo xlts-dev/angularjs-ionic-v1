@@ -8,7 +8,6 @@
   },
   "license": "MIT",
   "devDependencies": {
-    "@capacitor/cli": "3.1.1",
     "@ionic/v1-toolkit": "1.0.22",
     "bower": "1.8.12",
     "cordova-plugin-device": "^2.0.2",
@@ -20,15 +19,10 @@
     "gulp": "3.9.1",
     "gulp-clean-css": "^3.10.0",
     "gulp-rename": "^1.4.0",
-    "gulp-sass": "^3.2.1"
+    "gulp-sass": "^3.2.1",
+    "native-run": "^1.4.0"
   },
   "dependencies": {
-    "@capacitor/app": "1.0.2",
-    "@capacitor/core": "3.1.1",
-    "@capacitor/haptics": "1.0.2",
-    "@capacitor/ios": "3.1.1",
-    "@capacitor/keyboard": "1.0.2",
-    "@capacitor/status-bar": "1.0.2",
     "cordova-android": "9.1.0",
     "cordova-ios": "6.2.0"
   },
