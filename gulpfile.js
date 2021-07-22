@@ -1,5 +1,5 @@
 var gulp = require('gulp');
-var sass = require('gulp-sass');
+var sass = require('gulp-sass')(require('sass'));
 var cleanCss = require('gulp-clean-css');
 var rename = require('gulp-rename');
 
@@ -11,8 +11,7 @@ gulp.task('default', ['sass']);
 
 gulp.task('sass', function(done) {
   gulp.src('./scss/ionic.app.scss')
-    .pipe(sass())
-    .on('error', sass.logError)
+    .pipe(sass().on('error', sass.logError))
     .pipe(gulp.dest('./www/css/'))
     .pipe(cleanCss({
       keepSpecialComments: 0

@@ -1,6 +1,6 @@
 {
   "name": "angularjs-ionic-v1",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Ionic v1 with XLTS for AngularJS",
   "repository": {
     "type": "git",
@@ -18,7 +18,8 @@
     "gulp": "3.9.1",
     "gulp-clean-css": "^3.10.0",
     "gulp-rename": "^1.4.0",
-    "gulp-sass": "^3.2.1",
+    "gulp-sass": "^5.0.0",
+    "sass": "^1.35.2",
     "native-run": "^1.4.0"
   },
   "dependencies": {
