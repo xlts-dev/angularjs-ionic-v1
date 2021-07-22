@@ -39,7 +39,13 @@
     "preinstall": "npx npm-force-resolutions",
     "postinstall": "bower install",
     "start": "npm run start:web",
-    "start:web": "ionic serve"
+    "start:web": "ionic serve",
+    "start:android": "ionic cordova run android -l",
+    "start:ios": "ionic cordova run ios -l --external",
+    "build:android": "ionic cordova build android",
+    "build:ios": "ionic cordova build ios",
+    "prepare:ios": "ionic cordova prepare ios",
+    "prepare:android": "ionic cordova prepare android"
   },
   "cordova": {
     "plugins": {
