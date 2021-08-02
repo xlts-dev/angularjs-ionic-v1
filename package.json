@@ -1,6 +1,6 @@
 {
   "name": "angularjs-ionic-v1",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "description": "Ionic v1 with XLTS for AngularJS",
   "repository": {
     "type": "git",
@@ -23,9 +23,9 @@
     "native-run": "^1.4.0"
   },
   "dependencies": {
-    "angular": "1.5.11",
-    "angular-animate": "1.5.11",
-    "angular-sanitize": "1.5.11",
+    "angular": "npm:@xlts.dev/angular-1.5.x@1.5.12",
+    "angular-animate": "npm:@xlts.dev/angular-animate-1.5.x@1.5.12",
+    "angular-sanitize": "npm:@xlts.dev/angular-sanitize-1.5.x@1.5.12",
     "angular-ui-router": "0.2.13",
     "cordova-android": "9.1.0",
     "cordova-ios": "6.2.0",
