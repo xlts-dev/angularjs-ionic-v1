@@ -1,10 +1,10 @@
 {
-  "name": "angular-sanitize",
-  "version": "1.5.11",
-  "license": "MIT",
+  "name": "@xlts.dev/angular-sanitize-1.5.x",
+  "version": "1.5.12",
+  "license": "UNLICENSED",
   "main": "./angular-sanitize.js",
   "ignore": [],
   "dependencies": {
-    "angular": "1.5.11"
+    "angular": "1.5.12"
   }
 }

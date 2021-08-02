@@ -1,47 +1,50 @@
 {
-  "_from": "angular-animate@1.5.11",
-  "_id": "angular-animate@1.5.11",
+  "_from": "angular-animate@npm:@xlts.dev/angular-animate-1.5.x@1.5.12",
+  "_id": "@xlts.dev/angular-animate-1.5.x@1.5.12",
   "_inBundle": false,
-  "_integrity": "sha1-G6pDwwPRuTxOaqiUU7ORFLehxmk=",
+  "_integrity": "sha512-TjSBslTjX0pXlbh2rA6Jt4Uq1kMvUUacJBH1Ho1dyvmOvcAt2rqXa4r7gqMekcTkNVeASJ+AJXQo51e0x5GAgQ==",
   "_location": "/angular-animate",
   "_phantomChildren": {},
   "_requested": {
-    "type": "version",
+    "type": "alias",
     "registry": true,
-    "raw": "angular-animate@1.5.11",
+    "raw": "angular-animate@npm:@xlts.dev/angular-animate-1.5.x@1.5.12",
     "name": "angular-animate",
     "escapedName": "angular-animate",
-    "rawSpec": "1.5.11",
+    "rawSpec": "npm:@xlts.dev/angular-animate-1.5.x@1.5.12",
     "saveSpec": null,
-    "fetchSpec": "1.5.11"
+    "fetchSpec": null,
+    "subSpec": {
+      "type": "version",
+      "registry": true,
+      "raw": "@xlts.dev/angular-animate-1.5.x@1.5.12",
+      "name": "@xlts.dev/angular-animate-1.5.x",
+      "escapedName": "@xlts.dev%2fangular-animate-1.5.x",
+      "scope": "@xlts.dev",
+      "rawSpec": "1.5.12",
+      "saveSpec": null,
+      "fetchSpec": "1.5.12"
+    }
   },
   "_requiredBy": [
     "/"
   ],
-  "_resolved": "https://registry.npmjs.org/angular-animate/-/angular-animate-1.5.11.tgz",
-  "_shasum": "1baa43c303d1b93c4e6aa89453b39114b7a1c669",
-  "_spec": "angular-animate@1.5.11",
+  "_resolved": "https://registry.xlts.dev/@xlts.dev%2fangular-animate-1.5.x/-/angular-animate-1.5.x-1.5.12.tgz",
+  "_shasum": "b7c290bfe63b59b94215440099612874892df92f",
+  "_spec": "angular-animate@npm:@xlts.dev/angular-animate-1.5.x@1.5.12",
   "_where": "/Users/splaktar/Git/xlts/angularjs-ionic-v1",
   "author": {
-    "name": "Angular Core Team",
-    "email": "angular-core+npm@google.com"
+    "name": "XLTS.dev",
+    "email": "support@xlts.dev",
+    "url": "https://xlts.dev/angularjs"
   },
   "bugs": {
-    "url": "https://github.com/angular/angular.js/issues"
+    "email": "support@xlts.dev"
   },
   "bundleDependencies": false,
   "deprecated": false,
-  "description": "AngularJS module for animations",
-  "homepage": "http://angularjs.org",
-  "jspm": {
-    "shim": {
-      "angular-animate": {
-        "deps": [
-          "angular"
-        ]
-      }
-    }
-  },
+  "description": "XLTS for AngularJS module for animations",
+  "homepage": "https://xlts.dev/angularjs",
   "keywords": [
     "angular",
     "framework",
@@ -49,15 +52,12 @@
     "animation",
     "client-side"
   ],
-  "license": "MIT",
+  "license": "UNLICENSED",
   "main": "index.js",
-  "name": "angular-animate",
+  "name": "@xlts.dev/angular-animate-1.5.x",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/angular/angular.js.git"
+    "url": "git://github.com/xlts-dev/bower-angular-animate.git"
   },
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "version": "1.5.11"
+  "version": "1.5.12"
 }

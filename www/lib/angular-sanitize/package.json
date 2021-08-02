@@ -1,47 +1,50 @@
 {
-  "_from": "angular-sanitize@1.5.11",
-  "_id": "angular-sanitize@1.5.11",
+  "_from": "angular-sanitize@npm:@xlts.dev/angular-sanitize-1.5.x@1.5.12",
+  "_id": "@xlts.dev/angular-sanitize-1.5.x@1.5.12",
   "_inBundle": false,
-  "_integrity": "sha1-6/s/ND5UP5su8FD7TC6e4EjRdy8=",
+  "_integrity": "sha512-wQcR3L9CkhumcFiIe6s6HnOQY+0HbPaQQftvONsKg4r8rdNw2VIqf3zVALfOMoyoJthi3WojaZGw1BDY/aj6Fg==",
   "_location": "/angular-sanitize",
   "_phantomChildren": {},
   "_requested": {
-    "type": "version",
+    "type": "alias",
     "registry": true,
-    "raw": "angular-sanitize@1.5.11",
+    "raw": "angular-sanitize@npm:@xlts.dev/angular-sanitize-1.5.x@1.5.12",
     "name": "angular-sanitize",
     "escapedName": "angular-sanitize",
-    "rawSpec": "1.5.11",
+    "rawSpec": "npm:@xlts.dev/angular-sanitize-1.5.x@1.5.12",
     "saveSpec": null,
-    "fetchSpec": "1.5.11"
+    "fetchSpec": null,
+    "subSpec": {
+      "type": "version",
+      "registry": true,
+      "raw": "@xlts.dev/angular-sanitize-1.5.x@1.5.12",
+      "name": "@xlts.dev/angular-sanitize-1.5.x",
+      "escapedName": "@xlts.dev%2fangular-sanitize-1.5.x",
+      "scope": "@xlts.dev",
+      "rawSpec": "1.5.12",
+      "saveSpec": null,
+      "fetchSpec": "1.5.12"
+    }
   },
   "_requiredBy": [
     "/"
   ],
-  "_resolved": "https://registry.npmjs.org/angular-sanitize/-/angular-sanitize-1.5.11.tgz",
-  "_shasum": "ebfb3f343e543f9b2ef050fb4c2e9ee048d1772f",
-  "_spec": "angular-sanitize@1.5.11",
+  "_resolved": "https://registry.xlts.dev/@xlts.dev%2fangular-sanitize-1.5.x/-/angular-sanitize-1.5.x-1.5.12.tgz",
+  "_shasum": "da0a437686f40e1675c71bba9f9007ee88cc70eb",
+  "_spec": "angular-sanitize@npm:@xlts.dev/angular-sanitize-1.5.x@1.5.12",
   "_where": "/Users/splaktar/Git/xlts/angularjs-ionic-v1",
   "author": {
-    "name": "Angular Core Team",
-    "email": "angular-core+npm@google.com"
+    "name": "XLTS.dev",
+    "email": "support@xlts.dev",
+    "url": "https://xlts.dev/angularjs"
   },
   "bugs": {
-    "url": "https://github.com/angular/angular.js/issues"
+    "email": "support@xlts.dev"
   },
   "bundleDependencies": false,
   "deprecated": false,
-  "description": "AngularJS module for sanitizing HTML",
-  "homepage": "http://angularjs.org",
-  "jspm": {
-    "shim": {
-      "angular-sanitize": {
-        "deps": [
-          "angular"
-        ]
-      }
-    }
-  },
+  "description": "XLTS for AngularJS module for sanitizing HTML",
+  "homepage": "https://xlts.dev/angularjs",
   "keywords": [
     "angular",
     "framework",
@@ -49,15 +52,12 @@
     "html",
     "client-side"
   ],
-  "license": "MIT",
+  "license": "UNLICENSED",
   "main": "index.js",
-  "name": "angular-sanitize",
+  "name": "@xlts.dev/angular-sanitize-1.5.x",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/angular/angular.js.git"
+    "url": "git://github.com/xlts-dev/bower-angular-sanitize.git"
   },
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "version": "1.5.11"
+  "version": "1.5.12"
 }

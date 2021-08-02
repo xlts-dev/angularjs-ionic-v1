@@ -1,53 +1,62 @@
 {
-  "_from": "angular@1.5.11",
-  "_id": "angular@1.5.11",
+  "_from": "angular@npm:@xlts.dev/angular-1.5.x@1.5.12",
+  "_id": "@xlts.dev/angular-1.5.x@1.5.12",
   "_inBundle": false,
-  "_integrity": "sha1-jFunOG8VllyazzQp9ogVU6raMNY=",
+  "_integrity": "sha512-ICRCsmaczjQQ65llnELmIT1LgWlQXwqNiMsgTyTqwmofnYvKPS7NvTkvMj9Tk59CulGTghrUs4n8MHh9YUstwA==",
   "_location": "/angular",
   "_phantomChildren": {},
   "_requested": {
-    "type": "version",
+    "type": "alias",
     "registry": true,
-    "raw": "angular@1.5.11",
+    "raw": "angular@npm:@xlts.dev/angular-1.5.x@1.5.12",
     "name": "angular",
     "escapedName": "angular",
-    "rawSpec": "1.5.11",
+    "rawSpec": "npm:@xlts.dev/angular-1.5.x@1.5.12",
     "saveSpec": null,
-    "fetchSpec": "1.5.11"
+    "fetchSpec": null,
+    "subSpec": {
+      "type": "version",
+      "registry": true,
+      "raw": "@xlts.dev/angular-1.5.x@1.5.12",
+      "name": "@xlts.dev/angular-1.5.x",
+      "escapedName": "@xlts.dev%2fangular-1.5.x",
+      "scope": "@xlts.dev",
+      "rawSpec": "1.5.12",
+      "saveSpec": null,
+      "fetchSpec": "1.5.12"
+    }
   },
   "_requiredBy": [
     "/"
   ],
-  "_resolved": "https://registry.npmjs.org/angular/-/angular-1.5.11.tgz",
-  "_shasum": "8c5ba7386f15965c9acf3429f6881553aada30d6",
-  "_spec": "angular@1.5.11",
+  "_resolved": "https://registry.xlts.dev/@xlts.dev%2fangular-1.5.x/-/angular-1.5.x-1.5.12.tgz",
+  "_shasum": "f1e87cdfd88ecbba2796439bb8392198413c98b5",
+  "_spec": "angular@npm:@xlts.dev/angular-1.5.x@1.5.12",
   "_where": "/Users/splaktar/Git/xlts/angularjs-ionic-v1",
   "author": {
-    "name": "Angular Core Team",
-    "email": "angular-core+npm@google.com"
+    "name": "XLTS.dev",
+    "email": "support@xlts.dev",
+    "url": "https://xlts.dev/angularjs"
   },
   "bugs": {
-    "url": "https://github.com/angular/angular.js/issues"
+    "email": "support@xlts.dev"
   },
   "bundleDependencies": false,
   "deprecated": false,
-  "description": "HTML enhanced for web apps",
-  "homepage": "http://angularjs.org",
+  "description": "XLTS for AngularJS v1.5.x",
+  "homepage": "https://xlts.dev/angularjs",
   "keywords": [
-    "angular",
+    "angularjs",
     "framework",
     "browser",
     "client-side"
   ],
-  "license": "MIT",
+  "license": "UNLICENSED",
   "main": "index.js",
-  "name": "angular",
+  "name": "@xlts.dev/angular-1.5.x",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/angular/angular.js.git"
+    "url": "git://github.com/xlts-dev/bower-angular.git"
   },
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "version": "1.5.11"
+  "version": "1.5.12"
 }

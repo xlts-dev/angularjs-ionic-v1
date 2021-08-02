@@ -1,7 +1,7 @@
 {
-  "name": "angular",
-  "version": "1.5.11",
-  "license": "MIT",
+  "name": "@xlts.dev/angular-1.5.x",
+  "version": "1.5.12",
+  "license": "UNLICENSED",
   "main": "./angular.js",
   "ignore": [],
   "dependencies": {
