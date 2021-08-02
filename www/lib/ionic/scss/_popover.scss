@@ -26,7 +26,7 @@
   z-index: $z-index-popover;
   display: block;
   margin-top: 12px;
-  margin-left: -$popover-width / 2;
+  margin-left: -$popover-width * 0.5;
   height: $popover-height;
   width: $popover-width;
   background-color: $popover-bg-color;
@@ -163,6 +163,6 @@
 @media (min-width: $popover-large-break-point) {
   .popover {
     width: $popover-large-width;
-    margin-left: -$popover-large-width / 2;
+    margin-left: -$popover-large-width * 0.5;
   }
 }

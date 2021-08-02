@@ -4,6 +4,8 @@
  */
 
 // Make all forms have space below them
+@use "sass:math";
+
 form {
   margin: 0 0 $line-height-base;
 }
@@ -89,7 +91,7 @@ textarea {
   @include align-items(center);
   position: relative;
   overflow: hidden;
-  padding: ($item-padding / 3) * 2;
+  padding: math.div($item-padding, 3) * 2;
 }
 
 .item-input-wrapper {
@@ -110,7 +112,7 @@ textarea {
 }
 
 .item-input-wrapper ~ .button {
-  margin-left: ($item-padding / 3) * 2;
+  margin-left: math.div($item-padding, 3) * 2;
 }
 
 .input-label {
