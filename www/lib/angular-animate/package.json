@@ -1,37 +1,37 @@
 {
-  "_from": "angular-animate@npm:@xlts.dev/angular-animate-1.5.x@1.5.12",
-  "_id": "@xlts.dev/angular-animate-1.5.x@1.5.12",
+  "_from": "angular-animate@npm:@xlts.dev/angular-animate-1.5.x@1.5.13",
+  "_id": "@xlts.dev/angular-animate-1.5.x@1.5.13",
   "_inBundle": false,
-  "_integrity": "sha512-TjSBslTjX0pXlbh2rA6Jt4Uq1kMvUUacJBH1Ho1dyvmOvcAt2rqXa4r7gqMekcTkNVeASJ+AJXQo51e0x5GAgQ==",
+  "_integrity": "sha512-2smEzVsPrUGGxEUDP+KeXU6aFaY25YCNlSenkc0UMwUA3DtTz2ZG1H2nyIx6JxJhAGhwy3ucsITBJvnLmo1nTQ==",
   "_location": "/angular-animate",
   "_phantomChildren": {},
   "_requested": {
     "type": "alias",
     "registry": true,
-    "raw": "angular-animate@npm:@xlts.dev/angular-animate-1.5.x@1.5.12",
+    "raw": "angular-animate@npm:@xlts.dev/angular-animate-1.5.x@1.5.13",
     "name": "angular-animate",
     "escapedName": "angular-animate",
-    "rawSpec": "npm:@xlts.dev/angular-animate-1.5.x@1.5.12",
+    "rawSpec": "npm:@xlts.dev/angular-animate-1.5.x@1.5.13",
     "saveSpec": null,
     "fetchSpec": null,
     "subSpec": {
       "type": "version",
       "registry": true,
-      "raw": "@xlts.dev/angular-animate-1.5.x@1.5.12",
+      "raw": "@xlts.dev/angular-animate-1.5.x@1.5.13",
       "name": "@xlts.dev/angular-animate-1.5.x",
       "escapedName": "@xlts.dev%2fangular-animate-1.5.x",
       "scope": "@xlts.dev",
-      "rawSpec": "1.5.12",
+      "rawSpec": "1.5.13",
       "saveSpec": null,
-      "fetchSpec": "1.5.12"
+      "fetchSpec": "1.5.13"
     }
   },
   "_requiredBy": [
     "/"
   ],
-  "_resolved": "https://registry.xlts.dev/@xlts.dev%2fangular-animate-1.5.x/-/angular-animate-1.5.x-1.5.12.tgz",
-  "_shasum": "b7c290bfe63b59b94215440099612874892df92f",
-  "_spec": "angular-animate@npm:@xlts.dev/angular-animate-1.5.x@1.5.12",
+  "_resolved": "https://registry.xlts.dev/@xlts.dev%2fangular-animate-1.5.x/-/angular-animate-1.5.x-1.5.13.tgz",
+  "_shasum": "123fad0117c104252d355f7031f8f974b55a2906",
+  "_spec": "angular-animate@npm:@xlts.dev/angular-animate-1.5.x@1.5.13",
   "_where": "/Users/splaktar/Git/xlts/angularjs-ionic-v1",
   "author": {
     "name": "XLTS.dev",
@@ -59,5 +59,5 @@
     "type": "git",
     "url": "git://github.com/xlts-dev/bower-angular-animate.git"
   },
-  "version": "1.5.12"
+  "version": "1.5.13"
 }

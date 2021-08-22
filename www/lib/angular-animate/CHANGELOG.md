@@ -1,3 +1,26 @@
+<a name="1.5.13"></a>
+# 1.5.13 venerably-shielding (2021-08-20)
+
+## Bug Fixes
+- **jqLite:** prevent possible XSS due to regex-based HTML replacement
+  - This is fixes a [Medium Severity](https://snyk.io/vuln/SNYK-JS-ANGULAR-570058) and
+    [High Severity](https://snyk.io/vuln/SNYK-JS-ANGULAR-572020) vulnerability associated with
+    [CVE-2020-7676](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-7676).
+  - This fix was cherry-picked from the v1.8.x branch.
+- **docs:** remove extra `.` in error link URLs
+
+## New Features
+- **jqLite:** print warnings for problematic HTML input
+
+## Breaking Changes
+
+### **jqLite** due to:
+- **jqLite**: prevent possible XSS due to regex-based HTML replacement
+
+See https://jquery.com/upgrade-guide/3.5/. This applies a similar change
+to jqLite. Using self-closing tags in HTML is no longer supported.
+
+
 <a name="1.5.12"></a>
 # 1.5.12 archaically-looming (2021-08-01)
 
