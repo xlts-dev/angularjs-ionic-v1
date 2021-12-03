@@ -20,3 +20,11 @@ $ionicons-font-path: "../lib/ionic/fonts" !default;
 
 // Include all of Ionic
 @import "www/lib/ionic/scss/ionic";
+@import "www/lib/angular-material/angular-material";
+
+.friends-toggle {
+  font-size: 16px;
+}
+.toggle-list-item {
+  border: darkgray 1px solid;
+}

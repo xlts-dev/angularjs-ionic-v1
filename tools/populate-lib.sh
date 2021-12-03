@@ -2,6 +2,9 @@
 
 cp -R node_modules/angular/ www/lib/angular/;
 cp -R node_modules/angular-animate/ www/lib/angular-animate/;
+cp -R node_modules/angular-aria/ www/lib/angular-aria/;
+cp -R node_modules/angular-material/ www/lib/angular-material/;
+cp -R node_modules/angular-messages/ www/lib/angular-messages/;
 cp -R node_modules/angular-sanitize/ www/lib/angular-sanitize/;
 cp -R node_modules/angular-ui-router/api/ www/lib/angular-ui-router/api/;
 cp -R node_modules/angular-ui-router/release/ www/lib/angular-ui-router/release/;
