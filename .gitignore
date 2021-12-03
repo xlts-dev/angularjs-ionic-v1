@@ -29,3 +29,6 @@ npm-debug.log*
 /platforms
 /plugins
 
+www/lib/angular/
+www/lib/angular-animate
+www/lib/angular-sanitize

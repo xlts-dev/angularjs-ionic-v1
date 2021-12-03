@@ -1,9 +1,15 @@
 <ion-view view-title="Account">
   <ion-content>
-    <ion-list>
-    <ion-toggle  ng-model="settings.enableFriends">
-        Enable Friends
-    </ion-toggle>
-    </ion-list>
+    <md-list class="toggle-list">
+      <md-list-item class="toggle-list-item">
+        <p class="friends-toggle">Enable Friends</p>
+        <md-checkbox ng-model="settings.enableFriends" class="md-accent md-hue-3"></md-checkbox>
+      </md-list-item>
+    </md-list>
+<!--    <ion-list>-->
+<!--      <ion-toggle ng-model="settings.enableFriends">-->
+<!--          Enable Friends-->
+<!--      </ion-toggle>-->
+<!--    </ion-list>-->
   </ion-content>
 </ion-view>
