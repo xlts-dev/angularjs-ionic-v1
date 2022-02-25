@@ -1,6 +1,6 @@
 {
   "name": "angularjs-ionic-v1",
-  "version": "0.3.1",
+  "version": "0.4.0",
   "description": "Ionic v1 with XLTS for AngularJS",
   "repository": {
     "type": "git",
@@ -8,9 +8,13 @@
   },
   "license": "MIT",
   "devDependencies": {
-    "@ionic/v1-toolkit": "1.0.22",
-    "@types/angular": "^1.8.3",
+    "@ionic/cli": "6.18.1",
+    "@ionic/v1-toolkit": "3.1.2",
+    "@types/angular": "^1.8.4",
     "@types/angular-material": "^1.1.73",
+    "cordova": "11.0.0",
+    "cordova-android": "10.1.1",
+    "cordova-ios": "6.2.0",
     "cordova-plugin-device": "^2.0.2",
     "cordova-plugin-ionic-keyboard": "^2.2.0",
     "cordova-plugin-ionic-webview": "^4.2.1",
@@ -21,7 +25,7 @@
     "gulp-clean-css": "^3.10.0",
     "gulp-rename": "^1.4.0",
     "gulp-sass": "^5.0.0",
-    "native-run": "^1.4.0",
+    "native-run": "^1.5.0",
     "sass": "^1.35.2"
   },
   "dependencies": {
@@ -32,24 +36,22 @@
     "angular-messages": "npm:@xlts.dev/angular-messages-1.5.x@1.5.15",
     "angular-sanitize": "npm:@xlts.dev/angular-sanitize-1.5.x@1.5.15",
     "angular-ui-router": "0.2.13",
-    "cordova-android": "9.1.0",
-    "cordova-ios": "6.2.0",
     "ionic-sdk": "1.3.2"
   },
   "resolutions": {
-    "graceful-fs": "^4.2.8"
+    "graceful-fs": "4.2.9"
   },
   "scripts": {
     "preinstall": "npx npm-force-resolutions",
     "postinstall": "tools/populate-lib.sh",
     "start": "npm run start:web",
     "start:web": "ionic-v1 serve",
-    "start:android": "ionic-v1 cordova run android -l",
-    "start:ios": "ionic-v1 cordova run ios -l --external",
-    "build:android": "ionic-v1 cordova build android",
-    "build:ios": "ionic-v1 cordova build ios",
-    "prepare:ios": "ionic-v1 cordova prepare ios",
-    "prepare:android": "ionic-v1 cordova prepare android"
+    "start:android": "ionic cordova run android -l",
+    "start:ios": "ionic cordova run ios -l --external",
+    "build:android": "ionic cordova build android",
+    "build:ios": "ionic cordova build ios",
+    "prepare:ios": "ionic cordova prepare ios",
+    "prepare:android": "ionic cordova prepare android"
   },
   "cordova": {
     "plugins": {
@@ -61,8 +63,8 @@
       "cordova-plugin-ionic-keyboard": {}
     },
     "platforms": [
-      "ios",
-      "android"
+      "android",
+      "ios"
     ]
   }
 }
