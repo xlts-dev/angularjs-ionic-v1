@@ -48,6 +48,7 @@
     "start:web": "ionic-v1 serve",
     "start:android": "ionic cordova run android -l",
     "start:ios": "ionic cordova run ios -l --external",
+    "build:web": "ionic-v1 build",
     "build:android": "ionic cordova build android",
     "build:ios": "ionic cordova build ios",
     "prepare:ios": "ionic cordova prepare ios",
