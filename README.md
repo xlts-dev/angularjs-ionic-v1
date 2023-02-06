@@ -42,6 +42,10 @@ now.
 
 `npm run start:ios`
 
+### Start e2e tests
+
+`npm run e2e`
+
 ## Questions?
 
 Check out our [GitHub Discussions](https://github.com/xlts-dev/angularjs-ionic-v1/discussions) section to
