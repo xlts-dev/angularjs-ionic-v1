@@ -3,7 +3,17 @@ import {TabsPage} from '../pages/tabs-page';
 
 test.describe('tabs', () => {
   test.beforeEach(async ({page}) => {
-    await page.goto('http://localhost:8100/');
+    await page.goto('');
+  });
+
+  test.afterEach(async ({ page }) => {
+    const errorLogs = [];
+    page.on('console', message => {
+      if (message.type() === 'error') {
+        errorLogs.push(message.text());
+      }
+    });
+    expect(errorLogs).toStrictEqual([]);
   });
 
   test('tabs', async ({page}) => {

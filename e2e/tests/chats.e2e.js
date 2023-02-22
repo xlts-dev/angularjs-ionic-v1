@@ -4,9 +4,19 @@ import {ChatsPage} from '../pages/chats-page';
 
 test.describe('chats', () => {
   test.beforeEach(async ({page}) => {
-    await page.goto('http://localhost:8100/');
+    await page.goto('');
     const tabsPage = new TabsPage(page);
     await tabsPage.clickOnChatsTab();
+  });
+
+  test.afterEach(async ({ page }) => {
+    const errorLogs = [];
+    page.on('console', message => {
+      if (message.type() === 'error') {
+        errorLogs.push(message.text());
+      }
+    });
+    expect(errorLogs).toStrictEqual([]);
   });
 
   test('topnav', async ({page}) => {
