@@ -1,25 +1,25 @@
-import {test, expect} from '@playwright/test';
-import {TabsPage} from '../pages/tabs-page';
+import {expect, test} from '@playwright/test';
 import {AccountPage} from '../pages/account-page';
+import {TabsPage} from '../pages/tabs-page';
+import {ConsoleLogPage} from '../pages/console-log-page';
 
 test.describe('account', () => {
+  let consoleLogPage;
+
   test.beforeEach(async ({page}) => {
+    consoleLogPage = new ConsoleLogPage(page)
+    consoleLogPage.listenForConsoleAndPageErrors(page);
+
     await page.goto('');
     const tabsPage = new TabsPage(page);
     await tabsPage.clickOnAccountTab();
   });
 
   test.afterEach(async ({ page }) => {
-    const errorLogs = [];
-    page.on('console', message => {
-      if (message.type() === 'error') {
-        errorLogs.push(message.text());
-      }
-    });
-    expect(errorLogs).toStrictEqual([]);
+    expect(consoleLogPage.errorLogs).toStrictEqual([]);
   });
 
-  test('topnav', async ({page}) => {
+  test('TopNav', async ({page}) => {
     const accountPage = new AccountPage(page);
 
     await expect(accountPage.header).toHaveText('Account');
@@ -30,14 +30,10 @@ test.describe('account', () => {
     accountPage.enableFriends.check();
     await expect(accountPage.enableFriends.isChecked()).toBeTruthy();
 
-    await accountPage.clickOnEnableFriendsCheckbox();
+    await accountPage.enableFriends.click();
     await expect(accountPage.enableFriends).toHaveAttribute('aria-checked', 'false');
 
-    await accountPage.clickOnEnableFriendsCheckbox();
+    await accountPage.enableFriends.click();
     await expect(accountPage.enableFriends).toHaveAttribute('aria-checked', 'true');
   });
 })
-
-
-
-

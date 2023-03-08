@@ -57,7 +57,7 @@
     "build:ios": "ionic cordova build ios",
     "e2e": "playwright test",
     "e2e:debug": "playwright test --project chromium --headed",
-    "e2e-report": " npx playwright show-report",
+    "e2e:report": "playwright show-report",
     "prepare:ios": "ionic cordova prepare ios",
     "prepare:android": "ionic cordova prepare android"
   },

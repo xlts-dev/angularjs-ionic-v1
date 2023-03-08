@@ -42,7 +42,7 @@ now.
 
 `npm run start:ios`
 
-### Start e2e tests
+### Start e2e tests on Desktop Chrome
 
 `npm run e2e`
 

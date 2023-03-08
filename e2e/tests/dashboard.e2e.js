@@ -1,22 +1,22 @@
-import {test, expect} from '@playwright/test';
-import {TabsPage} from '../pages/tabs-page';
+import {expect, test} from '@playwright/test';
 import {DashboardPage} from '../pages/dashboard-page';
+import {TabsPage} from '../pages/tabs-page';
+import {ConsoleLogPage} from '../pages/console-log-page';
 
 test.describe('dashboard', () => {
+  let consoleLogPage;
+
   test.beforeEach(async ({page}) => {
+    consoleLogPage = new ConsoleLogPage(page)
+    consoleLogPage.listenForConsoleAndPageErrors(page);
+
     await page.goto('');
     const tabsPage = new TabsPage(page);
     await tabsPage.clickOnStatusTab();
   });
 
   test.afterEach(async ({ page }) => {
-    const errorLogs = [];
-    page.on('console', message => {
-      if (message.type() === 'error') {
-        errorLogs.push(message.text());
-      }
-    });
-    expect(errorLogs).toStrictEqual([]);
+    expect(consoleLogPage.errorLogs).toStrictEqual([]);
   });
 
   test('topnav', async ({page}) => {
@@ -43,7 +43,3 @@ test.describe('dashboard', () => {
     await expect(ionicForumPage.url()).toContain('forum.ionicframework.com/');
   });
 })
-
-
-
-

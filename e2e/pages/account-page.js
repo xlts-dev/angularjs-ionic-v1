@@ -8,8 +8,4 @@ export class AccountPage {
     this.header = page.locator('ion-nav-bar').getByText('Account');
     this.enableFriends = page.getByRole('checkbox');
   }
-
-  async clickOnEnableFriendsCheckbox() {
-    await this.page.getByTestId('enable-friends-checkbox').click();
-  }
 }

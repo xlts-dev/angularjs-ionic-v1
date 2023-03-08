@@ -1,19 +1,19 @@
 import {test, expect} from '@playwright/test';
 import {TabsPage} from '../pages/tabs-page';
+import {ConsoleLogPage} from '../pages/console-log-page';
 
 test.describe('tabs', () => {
+  let consoleLogPage;
+
   test.beforeEach(async ({page}) => {
+    consoleLogPage = new ConsoleLogPage(page)
+    consoleLogPage.listenForConsoleAndPageErrors(page);
+
     await page.goto('');
   });
 
   test.afterEach(async ({ page }) => {
-    const errorLogs = [];
-    page.on('console', message => {
-      if (message.type() === 'error') {
-        errorLogs.push(message.text());
-      }
-    });
-    expect(errorLogs).toStrictEqual([]);
+    expect(consoleLogPage.errorLogs).toStrictEqual([]);
   });
 
   test('tabs', async ({page}) => {

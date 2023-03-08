@@ -10,6 +10,6 @@ export class ChatsPage {
   }
 
   async clickOnUser() {
-    await this.page.getByRole('link').first().click();
+    await this.links.first().click();
   }
 }
