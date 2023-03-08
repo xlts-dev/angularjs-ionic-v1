@@ -23,6 +23,6 @@ const sass = (done) => {
 
 const watching = () => watch(paths.sass, series(sass));
 
-exports.default = series(sass);
-exports.sass = series(sass);
-exports.watch = series(watching);
+exports.default = sass;
+exports.sass = sass;
+exports.watch = watching;
