@@ -1,5 +1,5 @@
 const { src, dest, series, watch } = require('gulp');
-const plumber = require('gulp-plumber');
+const gulpSass = require('gulp-sass')(require('sass'));
 const cleanCss = require('gulp-clean-css');
 const rename = require('gulp-rename');
 
@@ -9,9 +9,7 @@ const paths = {
 
 const sass = (done) => {
   return src('./scss/ionic.app.scss')
-    .pipe(plumber({
-      handleError: () => this.emit('end')
-    }))
+    .pipe(gulpSass().on('error', gulpSass.logError))
     .pipe(dest('./www/css/'))
     .pipe(cleanCss({
       keepSpecialComments: 0
