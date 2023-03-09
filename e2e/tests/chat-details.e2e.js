@@ -2,14 +2,14 @@ import {expect, test} from '@playwright/test';
 import {ChatDetailPage} from '../pages/chat-detail-page';
 import {ChatsPage} from '../pages/chats-page';
 import {TabsPage} from '../pages/tabs-page';
-import {ConsoleLogPage} from '../pages/console-log-page';
+import {PageErrorCollector} from '../utils/page-error-collector';
 
 test.describe('chat detail', () => {
-  let consoleLogPage;
+  let pageErrorCollector;
 
   test.beforeEach(async ({page}) => {
-    consoleLogPage = new ConsoleLogPage(page)
-    consoleLogPage.listenForConsoleAndPageErrors(page);
+    pageErrorCollector = new PageErrorCollector(page)
+    pageErrorCollector.listenForConsoleAndPageErrors(page);
 
     await page.goto('');
     const tabsPage = new TabsPage(page);
@@ -19,7 +19,7 @@ test.describe('chat detail', () => {
   });
 
   test.afterEach(async ({ page }) => {
-    expect(consoleLogPage.errorLogs).toStrictEqual([]);
+    expect(pageErrorCollector.errorLogs).toStrictEqual([]);
   });
 
   test('details', async ({page}) => {

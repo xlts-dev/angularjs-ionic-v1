@@ -1,4 +1,4 @@
-export class ConsoleLogPage {
+export class PageErrorCollector {
   page;
   errorLogs;
 

@@ -1,14 +1,14 @@
 import {expect, test} from '@playwright/test';
 import {DashboardPage} from '../pages/dashboard-page';
 import {TabsPage} from '../pages/tabs-page';
-import {ConsoleLogPage} from '../pages/console-log-page';
+import {PageErrorCollector} from '../utils/page-error-collector';
 
 test.describe('dashboard', () => {
-  let consoleLogPage;
+  let pageErrorCollector;
 
   test.beforeEach(async ({page}) => {
-    consoleLogPage = new ConsoleLogPage(page)
-    consoleLogPage.listenForConsoleAndPageErrors(page);
+    pageErrorCollector = new PageErrorCollector(page)
+    pageErrorCollector.listenForConsoleAndPageErrors(page);
 
     await page.goto('');
     const tabsPage = new TabsPage(page);
@@ -16,7 +16,7 @@ test.describe('dashboard', () => {
   });
 
   test.afterEach(async ({ page }) => {
-    expect(consoleLogPage.errorLogs).toStrictEqual([]);
+    expect(pageErrorCollector.errorLogs).toStrictEqual([]);
   });
 
   test('topnav', async ({page}) => {
