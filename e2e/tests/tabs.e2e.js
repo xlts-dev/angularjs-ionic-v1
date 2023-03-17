@@ -1,19 +1,10 @@
-import {test, expect} from '@playwright/test';
+import {expect} from '@playwright/test';
 import {TabsPage} from '../pages/tabs-page';
-import {PageErrorCollector} from '../utils/page-error-collector';
+import {test} from '../utils/test-reporter';
 
 test.describe('tabs', () => {
-  let pageErrorCollector;
-
   test.beforeEach(async ({page}) => {
-    pageErrorCollector = new PageErrorCollector(page)
-    pageErrorCollector.listenForConsoleAndPageErrors(page);
-
     await page.goto('');
-  });
-
-  test.afterEach(async ({ page }) => {
-    expect(pageErrorCollector.errorLogs).toStrictEqual([]);
   });
 
   test('tabs', async ({page}) => {
