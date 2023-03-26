@@ -1,7 +1,7 @@
-import { test as base, expect } from '@playwright/test';
+import {test as base, expect} from '@playwright/test';
 
 export const test = base.extend({
-  page: async ({ baseURL, page }, use) => {
+  page: async ({baseURL, page}, use) => {
     const errorLogs = [];
 
     page.on('console', message => {

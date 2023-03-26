@@ -1,7 +1,7 @@
 import {expect} from '@playwright/test';
 import {AccountPage} from '../pages/account-page';
 import {TabsPage} from '../pages/tabs-page';
-import {test} from '../utils/test-reporter';
+import {test} from '../utils/test-with-error-capturing';
 
 test.describe('account', () => {
   test.beforeEach(async ({page}) => {
