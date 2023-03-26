@@ -47,8 +47,8 @@
     "graceful-fs": "4.2.10"
   },
   "scripts": {
-    "preinstall": "npx npm-force-resolutions && npx playwright install",
-    "postinstall": "bash tools/populate-lib.sh",
+    "preinstall": "npx npm-force-resolutions",
+    "postinstall": "npx playwright install && bash tools/populate-lib.sh",
     "start": "npm run start:web",
     "start:web": "ionic-v1 serve",
     "start:android": "ionic cordova run android -l",
