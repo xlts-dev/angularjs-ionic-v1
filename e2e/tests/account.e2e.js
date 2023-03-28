@@ -1,22 +1,13 @@
-import {expect, test} from '@playwright/test';
+import {expect} from '@playwright/test';
 import {AccountPage} from '../pages/account-page';
 import {TabsPage} from '../pages/tabs-page';
-import {PageErrorCollector} from '../utils/page-error-collector';
+import {test} from '../utils/test-with-error-capturing';
 
 test.describe('account', () => {
-  let pageErrorCollector;
-
   test.beforeEach(async ({page}) => {
-    pageErrorCollector = new PageErrorCollector(page)
-    pageErrorCollector.listenForConsoleAndPageErrors(page);
-
     await page.goto('');
     const tabsPage = new TabsPage(page);
     await tabsPage.clickOnAccountTab();
-  });
-
-  test.afterEach(async ({ page }) => {
-    expect(pageErrorCollector.errorLogs).toStrictEqual([]);
   });
 
   test('TopNav', async ({page}) => {
