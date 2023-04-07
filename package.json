@@ -7,8 +7,8 @@
     "url": "https://github.com/xlts-dev/angularjs-ionic-v1"
   },
   "engines": {
-    "node": ">=18",
-    "npm": "9"
+    "node": "14",
+    "npm": "6"
   },
   "license": "MIT",
   "devDependencies": {
