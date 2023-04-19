@@ -1,5 +1,6 @@
 #!/bin/bash
 
+rm -rf www/lib
 mkdir -p www/lib
 cp -R node_modules/angular www/lib;
 cp -R node_modules/angular-animate www/lib;
