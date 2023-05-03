@@ -1,9 +1,0 @@
-{
-  "name": "@xlts.dev/angular-1.5.x",
-  "version": "1.5.13",
-  "license": "UNLICENSED",
-  "main": "./angular.js",
-  "ignore": [],
-  "dependencies": {
-  }
-}

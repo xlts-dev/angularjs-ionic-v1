@@ -48,6 +48,7 @@
   },
   "scripts": {
     "preinstall": "npx npm-force-resolutions",
+    "switch-to-lts-packages": "npm i --save angular@1.5.11 angular-animate@1.5.11 angular-aria@1.5.11 angular-material@1.1.24 angular-messages@1.5.11 angular-sanitize@1.5.11 && npm run postinstall",
     "postinstall": "npx playwright install && bash tools/populate-lib.sh",
     "start": "npm run start:web",
     "start:web": "ionic-v1 serve",
