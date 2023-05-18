@@ -12,7 +12,7 @@
   },
   "license": "MIT",
   "devDependencies": {
-    "@ionic/cli": "6.20.8",
+    "@ionic/cli": "6.20.9",
     "@ionic/v1-toolkit": "3.2.20",
     "@playwright/test": "^1.30.0",
     "@types/angular": "^1.8.4",
