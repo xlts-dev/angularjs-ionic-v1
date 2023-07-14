@@ -1,7 +1,7 @@
 # Demo of Ionic v1 with AngularJS 1.5
 
 This project demonstrates an updated [Ionic v1](https://ionicframework.com/docs/v1/) project that uses the
-latest [XLTS for AngularJS 1.5.x](https://xlts.dev/angularjs) release (`1.5.17`) rather than the `1.5.3` End-Of-Life version
+latest [XLTS for AngularJS 1.5.x](https://xlts.dev/angularjs) release (`1.5.18`) rather than the `1.5.3` End-Of-Life version
 that ships with the Ionic v1 SDK. It also makes use of
 [XLTS for AngularJS Material 1.1.x](https://material.angularjs.xlts.dev/1.1.30/) (`1.1.30`).
 
