@@ -37,8 +37,13 @@ function addPlatformBodyTag(indexPath, platform) {
       newBodyTag = bodyTag.replace(classAttr, newClassAttr);
 
     } else {
+      // The bodyTag contains only the first found of `>`, due to the return of the first element of the array from method
+      // (findBodyTag)[https://github.com/xlts-dev/angularjs-ionic-v1/blob/c553c973d85142e66f119aed2fe3db83775f5f2b/hooks
+      // /after_prepare/010_add_platform_class.js#L57]. Therefore, we should replace only one tag.
+      // Fix https://github.com/xlts-dev/angularjs-ionic-v1/security/code-scanning/1 CodeQL warning
+      var closingBracketIdx = bodyTag.indexOf('>');
       // add class attribute to the body tag
-      newBodyTag = bodyTag.replace('>', ' class="' + platformClass + ' ' + cordovaClass + '">');
+      newBodyTag = bodyTag.slice(0, closingBracketIdx) + ' class="' + platformClass + ' ' + cordovaClass + '"' + bodyTag.slice(closingBracketIdx);
     }
 
     html = html.replace(bodyTag, newBodyTag);
